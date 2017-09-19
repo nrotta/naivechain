@@ -13,7 +13,7 @@ Check also [this blog post](https://medium.com/@lhartikk/a-blockchain-in-200-lin
 * Use Websockets to communicate with other nodes (P2P)
 * Super simple "protocols" in P2P communication
 * Data is not persisted in nodes
-* No proof-of-work or proof-of-stake: a block can be added to the blockchain without competition
+* Simple proof-of-work: for a block to be added to the blockchain a proof of work (number stored on the block's nonce field) must be generated. The block mining process iterates the nonce value until the block's hash has a specific number of preceding 0s (the number of 0s is defined by the difficulty var)
 
 
 ![alt tag](naivechain_blockchain.png)
